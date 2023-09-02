@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 namespace Gameplay
@@ -12,7 +13,7 @@ namespace Gameplay
         [Header("Attributes")]
         [SerializeField] private float speed;
         [SerializeField] private float gravity, jumpHeight, groundDistance;
-        [SerializeField] private float mouseSensitivity;
+        [SerializeField] private float mouseSensitivity, maxSlopeAngle;
         [SerializeField] private LayerMask groundMask;
 
         [HideInInspector] public bool Jump;
@@ -34,7 +35,7 @@ namespace Gameplay
             _mouseX *= mouseSensitivity * Time.deltaTime;
             _mouseY *= mouseSensitivity * Time.deltaTime;
             _xRotation -= _mouseY;
-            _xRotation = Mathf.Clamp(_xRotation, -80f, 25f);
+            _xRotation = Mathf.Clamp(_xRotation, -80f, 45f);
 
             transform.GetChild(1).localRotation = Quaternion.Euler(_xRotation,0f,0f);
             transform.Rotate(Vector3.up * _mouseX);
@@ -46,6 +47,10 @@ namespace Gameplay
                 velocity.y = -2f;
             }
 
+            // if (IsOnSlope())
+            // {
+            //     _moveDir = GetSlopeMoveDirection() * speed * Time.deltaTime;
+            // }
             _controller.Move(_moveDir * (speed * Time.deltaTime));
 
             if ((Input.GetButtonDown("Jump")) && _isGrounded)
@@ -72,15 +77,21 @@ namespace Gameplay
             _mouseY = value;
         }
 
-        public void TryJump()
-        {
-            Jump = true;
-            if (Jump && _isGrounded)
-            {
-                Jump = false;
-                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-            }
-            Jump = false;
-        }
+        // private RaycastHit _slopeHit;
+        // private bool IsOnSlope()
+        // {
+        //     if (Physics.Raycast(transform.position, Vector3.down, out _slopeHit, 1.3f))
+        //     {
+        //         float angle = Vector3.Angle(Vector3.up, _slopeHit.normal);
+        //         return angle < maxSlopeAngle && angle != 0;
+        //     }
+        //
+        //     return false;
+        // }
+        //
+        // private Vector3 GetSlopeMoveDirection()
+        // {
+        //     return Vector3.ProjectOnPlane(_moveDir, _slopeHit.normal).normalized;
+        // }
     }
 }

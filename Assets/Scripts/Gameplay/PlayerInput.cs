@@ -19,6 +19,7 @@ namespace Gameplay
             _player.PlayerMovement.SetDir(dir);
             _player.PlayerMovement.SetMouseX(Input.GetAxis("Mouse X"));
             _player.PlayerMovement.SetMouseY(Input.GetAxis("Mouse Y"));
+            if (Input.GetButtonUp("Fire1")) _player.TryCollectObject();
             //if (Input.GetButtonDown("Jump")) _player.PlayerMovement.TryJump();
         }
     }
