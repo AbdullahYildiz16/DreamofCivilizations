@@ -50,6 +50,10 @@ namespace Gameplay
         public void RemoveCollectable(Enums.CollectableType collectableType)
         {
             _neededCollectables.Remove(collectableType);
+            if (_neededCollectables < 0)
+            {
+                
+            }
         }
     }
 }
