@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    [SerializeField] private AudioSource audioSource;
+    public AudioSource audioSource;
     private void Awake()
     {
         audioSource.volume = PlayerPrefs.GetFloat("audio_volume", 1);

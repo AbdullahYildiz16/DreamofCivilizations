@@ -63,8 +63,11 @@ namespace Gameplay
         public void SetDir(Vector3 dir)
         {
             _moveDir = dir;
-            if (dir.magnitude == 0) _player.audioController.StopAudio();
-            _player.audioController.PlayClip(_player.walkingClip);
+            if (dir.magnitude == 0)
+            {
+                if(_player.audioController.audioSource.isPlaying)_player.audioController.StopAudio();
+            }
+            if(!_player.audioController.audioSource.isPlaying)_player.audioController.PlayClip(_player.walkingClip, true);
         }
 
         public void SetMouseX(float value)
