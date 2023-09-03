@@ -65,17 +65,17 @@ PrefabInstance:
     - target: {fileID: 3230906981137025630, guid: fc86d98c58911f749b69cb42a4df0300,
         type: 3}
       propertyPath: CollectableType
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3230906981137025631, guid: fc86d98c58911f749b69cb42a4df0300,
         type: 3}
       propertyPath: m_Name
-      value: Collectable Soil Variant
+      value: Collectable Sharp Rock Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8250475700074554918, guid: fc86d98c58911f749b69cb42a4df0300,
         type: 3}
       propertyPath: m_text
-      value: Press 'E' to Pick Soil
+      value: Press 'E' to Pick Fiber
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc86d98c58911f749b69cb42a4df0300, type: 3}

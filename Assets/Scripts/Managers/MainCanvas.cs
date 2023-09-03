@@ -2,6 +2,8 @@
 using System.Collections;
 using Gameplay;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Utilities;
 
 namespace Managers
 {
@@ -15,6 +17,26 @@ namespace Managers
         private void Awake()
         {
             instance = this;
+        }
+
+        private IEnumerator Start()
+        {
+            if (GlobalPlayerPrefs.LevelIdx % 2 == 0) yield break;
+
+            // its night
+
+            yield return new WaitForSeconds(2);
+
+            EnableNextLevelButton();
+        }
+
+        private bool onceLoad = false;
+        private void EnableNextLevelButton()
+        {
+            if (!onceLoad) onceLoad = true;
+            else return;
+            GlobalPlayerPrefs.LevelIdx++;
+            SceneManager.LoadScene(GlobalPlayerPrefs.LevelIdx);
         }
 
         public void EnableLevelEndUI()
