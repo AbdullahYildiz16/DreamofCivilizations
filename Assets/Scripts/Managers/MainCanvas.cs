@@ -14,9 +14,15 @@ namespace Managers
         [SerializeField] private GameObject tapToStartBtn;
         [SerializeField] private CraftArea craftArea;
         [SerializeField] private GameObject levelEndTextGo, materialWarningTextGo;
+        [SerializeField] private Button successBtn;
 
         private void Awake()
         {
+            successBtn.onClick.AddListener(() =>
+            {
+                GlobalPlayerPrefs.LevelIdx++;
+                SceneManager.LoadScene(GlobalPlayerPrefs.LevelIdx);
+            });
             instance = this;
         }
 
@@ -42,6 +48,11 @@ namespace Managers
             craftArea.Enable();
         }
 
+        public void DisableLevelEndUI()
+        {
+            levelEndTextGo.SetActive(false);
+        }
+
         public void EnableWarningUI()
         {
             if(_warningTextRoutine != null) StopCoroutine(_warningTextRoutine);
@@ -51,6 +62,25 @@ namespace Managers
         public void OnTapToStartBtnClicked()
         {
             EnableNextLevelButton();
+        }
+
+        private bool levelSucceed = false;
+        public void LevelSuccess()
+        {
+            if(levelSucceed) return;
+            levelSucceed = true;
+            StartCoroutine(SuccessRoutine());
+        }
+
+        private IEnumerator SuccessRoutine()
+        {
+            yield return new WaitForSeconds(2.4f);
+            EnableSuccesUI();
+        }
+
+        private void EnableSuccesUI()
+        {
+
         }
 
         public IEnumerator WarningTextRoutine()

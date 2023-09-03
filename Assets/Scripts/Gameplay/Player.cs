@@ -13,6 +13,9 @@ namespace Gameplay
         public PlayerMovement PlayerMovement;
         public PlayerInput PlayerInput;
 
+        [SerializeField] private Animator animator;
+        [SerializeField] private CraftArea craftArea;
+
         //[SerializeField] private float collectRadius;
         private CollectTrigger _collectTrigger;
 
@@ -93,6 +96,7 @@ namespace Gameplay
             _neededCollectables.Remove(data);
             if (_neededCollectables.Count <= 0)
             {
+                craftArea.EnableLight();
                 MainCanvas.instance.EnableLevelEndUI();
             }
         }
@@ -106,6 +110,12 @@ namespace Gameplay
         {
             public GameObject UIObj;
             public Enums.CollectableType CollectableType;
+        }
+
+        public void PlayCelebrateAnim()
+        {
+            animator.gameObject.SetActive(true);
+            animator.SetTrigger("Win");
         }
     }
 }

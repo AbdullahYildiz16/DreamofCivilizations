@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using Managers;
 using UnityEngine;
 
@@ -11,6 +12,9 @@ namespace Gameplay
         private Player _player;
 
         public List<Collectable> CollectablesInTrigger = new List<Collectable>();
+
+        [SerializeField] private Transform _playerCelebratePosition;
+        [SerializeField] private CinemachineVirtualCamera cinemachineVirtualCamera;
 
         private CraftArea _craftArea;
 
@@ -81,10 +85,19 @@ namespace Gameplay
                     {
                         if (_craftArea.IsActive)
                         {
-                            _craftArea.CloseUI();
                             _craftArea.IsActive = false;
                             _player.PlayerMovement.enabled = false;
                             _player.PlayerInput.enabled = false;
+                            _player.transform.position = _playerCelebratePosition.position;
+                            _player.transform.rotation = _playerCelebratePosition.rotation;
+                            _player.PlayCelebrateAnim();
+                            cinemachineVirtualCamera.Priority = 10;
+                            CollectablesInTrigger.Clear();
+                            _craftArea.DisableLight();
+                            _craftArea.CloseUI();
+                            MainCanvas.instance.DisableLevelEndUI();
+                            MainCanvas.instance.LevelSuccess();
+                            gameObject.SetActive(false);
                             Debug.Log("Level End");
                         }
                         else

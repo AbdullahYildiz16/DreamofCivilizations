@@ -7,10 +7,21 @@ namespace Gameplay
         public bool IsActive = false;
 
         [SerializeField] private GameObject textUIGo;
+        [SerializeField] private GameObject lightGo;
 
         public void Enable()
         {
             IsActive = true;
+        }
+
+        public void EnableLight()
+        {
+            lightGo.SetActive(true);
+        }
+
+        public void DisableLight()
+        {
+            lightGo.SetActive(false);
         }
 
         public void OpenUI()
