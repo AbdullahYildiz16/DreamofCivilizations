@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 8250475700074554918, guid: fc86d98c58911f749b69cb42a4df0300,
         type: 3}
       propertyPath: m_text
-      value: Press 'E' to Pick Grass
+      value: Press 'E' to Pick Dry Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc86d98c58911f749b69cb42a4df0300, type: 3}
