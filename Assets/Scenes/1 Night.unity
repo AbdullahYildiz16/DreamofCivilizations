@@ -43098,7 +43098,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1969879873
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -43115,7 +43115,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1970354753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43817,6 +43817,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1212582761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2003097191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351852, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973669989633351854, guid: fd40f30872003444f839be8a901543f5,
+        type: 3}
+      propertyPath: m_Name
+      value: NightAudioController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd40f30872003444f839be8a901543f5, type: 3}
 --- !u!1001 &2007038525
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -339,6 +339,9 @@ MonoBehaviour:
   PlayerInput: {fileID: 8501267789961520471}
   animator: {fileID: 0}
   craftArea: {fileID: 0}
+  winDanceClip: {fileID: 8300000, guid: 1d3f15ad431af044b8b708da34139031, type: 3}
+  walkingClip: {fileID: 8300000, guid: c3fd90f92343e954eafe68e5a9fcffe5, type: 3}
+  audioController: {fileID: 0}
   collectableSO: {fileID: 11400000, guid: 6d140d621b2a76841a286c11048ad5db, type: 2}
   UICollectableParent: {fileID: 0}
   woodUIPrefab: {fileID: 0}

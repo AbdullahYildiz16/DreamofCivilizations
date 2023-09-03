@@ -17801,7 +17801,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &727396481
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17818,7 +17818,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &729686085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31930,6 +31930,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1137939831}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1138031843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2716014127243587177, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_Name
+      value: DayAudioController
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716014127243587182, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 651d2f943d1d14c4b91ff78a1b4df754, type: 3}
+--- !u!114 &1138031844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2716014127243587183, guid: 651d2f943d1d14c4b91ff78a1b4df754,
+    type: 3}
+  m_PrefabInstance: {fileID: 1138031843}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b52950d840a6b479adfd46586d9b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1143677830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53064,6 +53145,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4180699391159056167, guid: 5fbdbacf0d70bc549ba5f9bb32a4065e,
         type: 3}
+    - target: {fileID: 8501267789961520469, guid: 8990a966836bda04eb62f8732411d716,
+        type: 3}
+      propertyPath: audioController
+      value: 
+      objectReference: {fileID: 1138031844}
     - target: {fileID: 8501267789961520469, guid: 8990a966836bda04eb62f8732411d716,
         type: 3}
       propertyPath: roundRockUIPrefab
