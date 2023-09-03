@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Gameplay;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Utilities;
 
 namespace Managers
@@ -11,6 +11,7 @@ namespace Managers
     {
         public static MainCanvas instance;
 
+        [SerializeField] private GameObject tapToStartBtn;
         [SerializeField] private CraftArea craftArea;
         [SerializeField] private GameObject levelEndTextGo, materialWarningTextGo;
 
@@ -22,12 +23,8 @@ namespace Managers
         private IEnumerator Start()
         {
             if (GlobalPlayerPrefs.LevelIdx % 2 == 0) yield break;
+            tapToStartBtn.SetActive(true);
 
-            // its night
-
-            yield return new WaitForSeconds(2);
-
-            EnableNextLevelButton();
         }
 
         private bool onceLoad = false;
@@ -49,6 +46,11 @@ namespace Managers
         {
             if(_warningTextRoutine != null) StopCoroutine(_warningTextRoutine);
             _warningTextRoutine = StartCoroutine(WarningTextRoutine());
+        }
+
+        public void OnTapToStartBtnClicked()
+        {
+            EnableNextLevelButton();
         }
 
         public IEnumerator WarningTextRoutine()
