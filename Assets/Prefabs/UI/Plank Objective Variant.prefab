@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5280607422015075, guid: 7a6a60620735af54d8a042e13057e54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1870772943, guid: 8cdc172a1d377144588739430f6d055a,
+      objectReference: {fileID: -887946118, guid: 8cdc172a1d377144588739430f6d055a,
         type: 3}
     - target: {fileID: 3962109007976259831, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
@@ -120,27 +120,32 @@ PrefabInstance:
     - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 109.4
+      value: 120.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 98.9
+      value: -21.8
       objectReference: {fileID: 0}
     - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.2
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 7371246435922629889, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_Name
-      value: Wood Objective Variant
+      value: Plank Objective Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7748147971317030703, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}

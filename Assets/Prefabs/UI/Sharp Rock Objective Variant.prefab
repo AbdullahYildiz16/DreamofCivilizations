@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5280607422015075, guid: 7a6a60620735af54d8a042e13057e54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1870772943, guid: 8cdc172a1d377144588739430f6d055a,
+      objectReference: {fileID: -2080617519, guid: 8cdc172a1d377144588739430f6d055a,
         type: 3}
     - target: {fileID: 3962109007976259831, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
@@ -119,33 +119,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 109.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
-        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 98.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5368265147698880983, guid: 7a6a60620735af54d8a042e13057e54a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.2
+      value: 12.6
       objectReference: {fileID: 0}
     - target: {fileID: 7371246435922629889, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_Name
-      value: Wood Objective Variant
+      value: Rock Objective Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 7748147971317030703, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_text
-      value: Wood
+      value: Sharp Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a6a60620735af54d8a042e13057e54a, type: 3}

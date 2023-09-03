@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Managers;
 using ScriptableObjects;
 using Unity.Mathematics;
 using UnityEngine;
@@ -51,8 +52,11 @@ namespace Gameplay
 
         public void TryCollectObject()
         {
+            if (_collectTrigger.TryInteractCraft(true)) return;
+
             // var collectableColliders = Physics.OverlapSphere(transform.position, 2f);
             // List<Collectable> collectables = new List<Collectable>();
+
             var collectables = _collectTrigger.CollectablesInTrigger.ToList();
 
             if(collectables.Count < 1) return;
@@ -86,9 +90,9 @@ namespace Gameplay
 
             Destroy(data.UIObj);
             _neededCollectables.Remove(data);
-            if (_neededCollectables.Count < 0)
+            if (_neededCollectables.Count <= 0)
             {
-                Debug.Log("__");
+                MainCanvas.instance.EnableLevelEndUI();
             }
         }
 
