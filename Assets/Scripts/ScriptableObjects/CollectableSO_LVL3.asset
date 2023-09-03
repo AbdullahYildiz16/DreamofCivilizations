@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fe4f5833ab3494a938c2c08ea967251, type: 3}
-  m_Name: CollectableSO_LVL2
+  m_Name: CollectableSO_LVL3
   m_EditorClassIdentifier: 
-  NeededCollectables: 040000000000000006000000
+  NeededCollectables: 0100000002000000
