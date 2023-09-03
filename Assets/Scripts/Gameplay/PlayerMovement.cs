@@ -22,7 +22,7 @@ namespace Gameplay
         private void Awake()
         {
             _player = GetComponent<Player>();
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 
         private Vector3 _moveDir;

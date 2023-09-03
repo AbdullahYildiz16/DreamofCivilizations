@@ -103,7 +103,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: balta anim_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 75
+        width: 1170
+        height: 919
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b6751225cd34b4e89b710c75725ee1
+      internalID: -271644463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balta anim_3
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 75
+        width: 1164
+        height: 919
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3502a445f589c42b58ce28ecf4deb9
+      internalID: -440981142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: balta anim_5
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 75
+        width: 1159
+        height: 919
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b893599d4f515c34cbf6bc95f2805d8f
+      internalID: 678434952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +177,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      balta anim_0: 1430297249
+      balta anim_7: -299420456
+      balta anim_6: 732277803
+      balta anim_1: -271644463
+      balta anim_2: -12531929
+      balta anim_3: -440981142
+      balta anim_4: 102138512
+      balta anim_8: -2120399208
+      balta anim_5: 678434952
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

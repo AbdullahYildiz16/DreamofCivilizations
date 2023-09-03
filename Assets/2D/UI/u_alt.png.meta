@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b8897b1bd475dde468e647ec61c06fbf
+guid: 51d19ba2b74e7d244a87f062bbbf9eb4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,49 +103,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Fire_sprite_vfx__0
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 103
-        width: 530
-        height: 677
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7be0027352444484c8c7f3b0ba3cebc7
-      internalID: -1139992711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire_sprite_vfx__1
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 118
-        width: 467
-        height: 636
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e19799bf8fe491940aca509e9d5942a1
-      internalID: -733473065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -156,9 +114,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Fire_sprite_vfx__0: -1139992711
-      Fire_sprite_vfx__1: -733473065
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

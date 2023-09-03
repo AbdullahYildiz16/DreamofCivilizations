@@ -419,3 +419,4 @@ MonoBehaviour:
   IsActive: 0
   textUIGo: {fileID: 7912919772276671139}
   lightGo: {fileID: 7193823193570272809}
+  CraftedObj: {fileID: 2254961378176968067}
