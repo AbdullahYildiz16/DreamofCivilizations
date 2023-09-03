@@ -72,6 +72,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectable GrassVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 3230906983152181170, guid: fc86d98c58911f749b69cb42a4df0300,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5394353912926940947, guid: f249fa82f3b75a542ab28cf5594204ff,
+        type: 3}
+    - target: {fileID: 3230906983152181171, guid: fc86d98c58911f749b69cb42a4df0300,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29c27da292e9ea948b0f1380435b6354, type: 2}
     - target: {fileID: 8250475700074554918, guid: fc86d98c58911f749b69cb42a4df0300,
         type: 3}
       propertyPath: m_text
