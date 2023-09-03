@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Nope.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Menu.unity
+    guid: 70ce111c71624cf449181a148adbdde1
+  - enabled: 1
+    path: Assets/Scenes/1 Night.unity
+    guid: a077a379dfc25be4a83d6163e716b385
+  - enabled: 1
+    path: Assets/Scenes/2 Day.unity
+    guid: 999011e4bb65a7243a6b699b08648411
   m_configObjects: {}
