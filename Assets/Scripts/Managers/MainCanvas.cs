@@ -80,7 +80,7 @@ namespace Managers
 
         private void EnableSuccesUI()
         {
-
+            successBtn.gameObject.SetActive(true);
         }
 
         public IEnumerator WarningTextRoutine()
