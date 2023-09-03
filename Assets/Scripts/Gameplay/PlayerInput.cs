@@ -14,7 +14,7 @@ namespace Gameplay
 
         private void Update()
         {
-            var dir = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+            var dir = transform.right * Input.GetAxisRaw("Horizontal") + transform.forward * Input.GetAxisRaw("Vertical");
             dir.Normalize();
             _player.PlayerMovement.SetDir(dir);
             _player.PlayerMovement.SetMouseX(Input.GetAxis("Mouse X"));

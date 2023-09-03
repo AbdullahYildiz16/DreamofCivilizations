@@ -6,6 +6,6 @@ namespace Interface
 {
     public interface ICollectible
     {
-        public void Collect(List<Enums.CollectableType> collectableType, Player player);
+        public void Collect(List<Player.CollectableData> collectableType, Player player);
     }
 }
