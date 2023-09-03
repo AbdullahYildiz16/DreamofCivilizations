@@ -24,7 +24,7 @@ namespace Gameplay
 
         [Header("UI Prefabs")]
         [SerializeField] private GameObject woodUIPrefab;
-        [SerializeField] private GameObject grassUIPrefab, rockUIPrefab, fiberUIPrefab, soilUIPrefab, waterUIPrefab;
+        [SerializeField] private GameObject plankUIPrefab, grassUIPrefab, rockUIPrefab, sharpRockUIPrefab, roundRockUIPrefab, fiberUIPrefab, soilUIPrefab, waterUIPrefab;
 
         private void Awake()
         {
@@ -34,8 +34,11 @@ namespace Gameplay
                 var go = type switch
                 {
                     Enums.CollectableType.Wood => Instantiate(woodUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
+                    Enums.CollectableType.Plank => Instantiate(plankUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
                     Enums.CollectableType.Grass => Instantiate(grassUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
                     Enums.CollectableType.Rock => Instantiate(rockUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
+                    Enums.CollectableType.SharpRock => Instantiate(sharpRockUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
+                    Enums.CollectableType.RoundRock => Instantiate(roundRockUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
                     Enums.CollectableType.Fiber => Instantiate(fiberUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
                     Enums.CollectableType.Soil => Instantiate(soilUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),
                     Enums.CollectableType.Water => Instantiate(waterUIPrefab, Vector3.zero, Quaternion.identity, UICollectableParent),

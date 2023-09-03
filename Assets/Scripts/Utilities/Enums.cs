@@ -7,8 +7,11 @@ namespace Utilities
         public enum CollectableType
         {
             Wood,
+            Plank,
             Grass,
             Rock,
+            SharpRock,
+            RoundRock,
             Fiber,
             Soil,
             Water,

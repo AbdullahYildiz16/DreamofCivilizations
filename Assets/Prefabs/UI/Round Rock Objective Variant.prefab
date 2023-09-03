@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5280607422015075, guid: 7a6a60620735af54d8a042e13057e54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 605386339, guid: 8cdc172a1d377144588739430f6d055a,
+      objectReference: {fileID: -2109837986, guid: 8cdc172a1d377144588739430f6d055a,
         type: 3}
     - target: {fileID: 3962109007976259831, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 7371246435922629889, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_Name
-      value: Rock Objective Variant 2
+      value: Round Rock Objective Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7748147971317030703, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}

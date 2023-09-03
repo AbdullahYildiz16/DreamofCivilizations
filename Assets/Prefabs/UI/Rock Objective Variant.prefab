@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 7748147971317030703, guid: 7a6a60620735af54d8a042e13057e54a,
         type: 3}
       propertyPath: m_text
-      value: Rock
+      value: Flint Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a6a60620735af54d8a042e13057e54a, type: 3}

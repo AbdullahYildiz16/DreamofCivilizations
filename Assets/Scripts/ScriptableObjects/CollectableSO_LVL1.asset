@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe4f5833ab3494a938c2c08ea967251, type: 3}
   m_Name: CollectableSO_LVL1
   m_EditorClassIdentifier: 
-  NeededCollectables: 00000000000000000000000001000000
+  NeededCollectables: 00000000020000000300000003000000
