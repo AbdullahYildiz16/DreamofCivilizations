@@ -92,7 +92,8 @@ namespace Gameplay
                 }
             }
 
-            Destroy(data.UIObj);
+            //Destroy(data.UIObj);
+            data.UIObj.transform.GetChild(2).GetChild(0).gameObject.SetActive(true);
             _neededCollectables.Remove(data);
             if (_neededCollectables.Count <= 0)
             {

@@ -95,6 +95,7 @@ namespace Gameplay
                             CollectablesInTrigger.Clear();
                             _craftArea.DisableLight();
                             _craftArea.CloseUI();
+                            _craftArea.CraftedObj.SetActive(true);
                             MainCanvas.instance.DisableLevelEndUI();
                             MainCanvas.instance.LevelSuccess();
                             gameObject.SetActive(false);

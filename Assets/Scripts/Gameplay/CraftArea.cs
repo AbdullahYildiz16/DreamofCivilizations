@@ -8,6 +8,7 @@ namespace Gameplay
 
         [SerializeField] private GameObject textUIGo;
         [SerializeField] private GameObject lightGo;
+        public GameObject CraftedObj;
 
         public void Enable()
         {
