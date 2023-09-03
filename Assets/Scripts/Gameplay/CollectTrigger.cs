@@ -100,6 +100,8 @@ namespace Gameplay
                             MainCanvas.instance.LevelSuccess();
                             gameObject.SetActive(false);
                             Debug.Log("Level End");
+                            _player.audioController.PlayClip(_player.winDanceClip, true);
+                            
                         }
                         else
                         {

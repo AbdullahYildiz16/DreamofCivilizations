@@ -15,6 +15,10 @@ namespace Gameplay
 
         [SerializeField] private Animator animator;
         [SerializeField] private CraftArea craftArea;
+        
+        public AudioClip winDanceClip;
+        public AudioClip walkingClip;
+        public AudioController audioController;
 
         //[SerializeField] private float collectRadius;
         private CollectTrigger _collectTrigger;
