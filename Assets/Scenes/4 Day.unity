@@ -53036,6 +53036,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 8501267789961520469, guid: 8990a966836bda04eb62f8732411d716,
         type: 3}
+      propertyPath: collectableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: f5e27e8fa4f6f1c408bca232404fc2d2,
+        type: 2}
+    - target: {fileID: 8501267789961520469, guid: 8990a966836bda04eb62f8732411d716,
+        type: 3}
       propertyPath: fiberUIPrefab
       value: 
       objectReference: {fileID: 4180699391159056167, guid: 2a069524e679e414caba579cf86efadb,
