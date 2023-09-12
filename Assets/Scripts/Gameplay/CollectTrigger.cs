@@ -99,6 +99,7 @@ namespace Gameplay
                             MainCanvas.instance.DisableLevelEndUI();
                             MainCanvas.instance.LevelSuccess();
                             gameObject.SetActive(false);
+                            Cursor.lockState = CursorLockMode.Confined;
                             Debug.Log("Level End");
                             _player.audioController.PlayClip(_player.winDanceClip, true);
                             
